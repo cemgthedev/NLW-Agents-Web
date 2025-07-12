@@ -118,3 +118,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Para navegadores WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 6px;           /* Largura do scroll vertical */
+  height: 6px;          /* Altura do scroll horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;  /* Fundo da trilha */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.4); /* Cor da barra */
+  border-radius: 10px;                         /* Bordas arredondadas */
+  border: 1px solid transparent;              /* Borda interna para suavizar */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;                    /* Scroll fino */
+  scrollbar-color: rgba(100, 100, 100, 0.4) transparent; /* Cor da barra e do fundo */
+}
